@@ -9,7 +9,6 @@ gsap.ticker.add((time) => {
 
 gsap.ticker.lagSmoothing(0);
 
-
 ScrollTrigger.create({
     trigger: ".ws",
     start: "top bottom",
@@ -20,7 +19,7 @@ ScrollTrigger.create({
         const sideCols = document.querySelectorAll(".col:not(.main)");
         const mainImg = document.querySelector(".img.main img");
 
-        const scale = 1 + self.progress * 2.65;
+        const scale = 1 + self.progress * 4.2;
         const yTranslate = self.progress * 300;
         const mainImgScale = 2 - self.progress * 0.85;
 
@@ -31,13 +30,5 @@ ScrollTrigger.create({
         });
 
         mainImg.style.transform = `scale(${mainImgScale})`;
-    }
+    },
 });
-
-
-
-
-
-
-
-
